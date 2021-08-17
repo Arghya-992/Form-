@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <h1 style = "font-family: Comic Sans MS;"> <center>  <u>   PORSCHE Car Retail and Selling </u> </center> </h1> 
+
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> VEHICLE REGISTRATION FORM </title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body> 
+ <h3> This is to certify that Mr. Arghya Das Chattopadhyay has confirmed to the buying of a Porsche and will resort to do the same in approximately 1 month. </h3> 
+<div>
+  
+  <form
+  style = "width: 1325px; height : 800px; 
+  background-color:rgb(36, 211, 235) ;
+  border : 5px solid rgb(0, 0, 0) ; 
+   padding-top :40px ;
+    text-align : center; 
+    margin: 40px;
+     font-size: 20px">
+      
+
+     <h4>
+        <label> Car model  </label>
+        <input type = "text" id = "1" value = "">
+        <p id="1d" style= "border: 2.5px solid black; border-radius: 20px;"> Car Model: </p>
+        
+       
+        <label> Name of the Retailer </label>
+        <input type = "text" id = "2" value="">
+        <p id="2d" style= "border: 2.5px solid black; border-radius: 20px;"> Name of the Retailer </p>
+        
+
+        <label> Price :</label>
+        <input type="number" id="3" value=""> 
+        <p id="3d" style= "border:2.5px solid black; border-radius: 20px;" > Price: </p> 
+        
+
+        <label> <b>Process of Payment </b> </label> <br>
+        <input type = "radio"> <label> By Cheque </label> <br>
+        <input type = "radio"> <label> By Cash </label> <br>
+        <br><br>
+
+        <label> <b> <center>Date of selling (to be filled in by the seller)</center> </b> </label>
+        <input type = "date" id = "4" value="">
+        <br><br>
+
+        <label> <b> <center>Date of buying (to be filled in by the buyer)</center> </b> </label>
+        <input type = "date" id = "5" value="">
+        <br><br>
+
+        <label> Bought (verified):  </label>
+        <input type = "text" id = "6" value="">
+        <p id="6d" style= "border: 2.5px solid black; border-radius: 20px;"> Is it Bought? </p>
+        <br> <br>
+        <a href="VEHICLE  REGISTRATION HELP.docx"> CLICK HERE TO KNOW MORE</a><br><br> 
+     </h4>
+
+     <button type ="button" onclick = "evaluation()"> Submit </button>
+    </form>
+    <script>
+    function evaluation(){
+      var a = document.getElementById("1").value;
+      var b = document.getElementById("2").value;
+      var c = document.getElementById("3").value;
+      var d = document.getElementById("4").value;
+      var e = document.getElementById("5").value;
+      var f = document.getElementById("6").value;
+
+      document.getElementById("3d").innerHTML = "Price: "+c;
+      document.getElementById("2d").innerHTML = "Name of the Retailer: "+b;
+      document.getElementById("1d").innerHTML = "Car Model: "+a;
+      document.getElementById("6d").innerHTML = "Is it bought? "+f;
+    }
+
+    </script>
+</div>    
+</body>
+</html>
